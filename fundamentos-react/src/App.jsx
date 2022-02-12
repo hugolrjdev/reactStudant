@@ -5,6 +5,7 @@ import Primeiro from './componentes/basicos/Primeiro';
 import ComParamentros from './componentes/basicos/ComParametros';
 import Fragmento from './componentes/basicos/Fragmentos';
 import Card from "./componentes/layout/Card";
+import Familia from './componentes/basicos/Familia';
 
 
 const user = "Hugo Lélio";
@@ -13,7 +14,14 @@ const deuRock = <div><h1>D3uR0cK {user}</h1></div>;
 export default props => 
         <div className='app'>
            <h1>Fundamentos React</h1>
+
+
             <div className="cards">
+
+            <Card titulo="#05 - Familia Componente" color="#4a4e4d">
+                <Familia sobrenome="Lélio"></Familia>
+            </Card>
+
             <Card titulo="#04 - Aleatorios" color="#fe8a71"> 
                 <Aleatorio min={1} max={10} />
             </Card>
