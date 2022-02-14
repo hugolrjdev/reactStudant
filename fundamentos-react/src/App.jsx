@@ -1,4 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 import './App.css';
+import TabelaDeProdutos from './componentes/repeticao/TabelaDeProdutos';
+import ListaAlunos from './componentes/repeticao/ListaAlunos';
 import Aleatorio from "./componentes/basicos/Aleatorio";
 import React from "react";
 import Primeiro from './componentes/basicos/Primeiro';
@@ -6,6 +9,7 @@ import ComParamentros from './componentes/basicos/ComParametros';
 import Fragmento from './componentes/basicos/Fragmentos';
 import Card from "./componentes/layout/Card";
 import Familia from './componentes/basicos/Familia';
+import FamiliaMenbro from './componentes/basicos/FamiliaMenbro';
 
 
 const user = "Hugo Lélio";
@@ -17,9 +21,21 @@ export default props =>
 
 
             <div className="cards">
+            <Card titulo="#06 - Desafio de Repetição" color="#3da4ab">
+                <TabelaDeProdutos/>
+            </Card>
+
+            <Card titulo="#06 - Repetição Lista de Alunos" color="#0e9aa7">
+                <ListaAlunos></ListaAlunos>
+            </Card>
 
             <Card titulo="#05 - Familia Componente" color="#4a4e4d">
-                <Familia sobrenome="Lélio"></Familia>
+                <Familia sobrenome="Rodrigues">
+                    <FamiliaMenbro nome="Hugo" />
+                    <FamiliaMenbro nome="Valentina" />
+                    <FamiliaMenbro nome="Hugo Neto" />
+                    <FamiliaMenbro nome="Thuany"/>
+                </Familia>
             </Card>
 
             <Card titulo="#04 - Aleatorios" color="#fe8a71"> 

@@ -1,0 +1,16 @@
+.tabela-produtos table {
+    width: 100%;
+}
+
+.tabela-produtos th {
+    background-color: #f5f5dc;
+    text-align: left;
+    padding: 10px 15px;
+}
+.tabela-produtos td {
+    padding: 2px 15px;
+}
+
+.tabela-produtos .par {
+    background-color: #a9a9a9;
+}
