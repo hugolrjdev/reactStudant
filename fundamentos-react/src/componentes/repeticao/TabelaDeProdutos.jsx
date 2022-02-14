@@ -18,7 +18,7 @@ export default props=>{
         });
 
         return (
-            <tr key={produto.id} style={{'text-align': 'left'}} className={(index % 2 == 0) ? 'par' : '' }>
+            <tr key={produto.id} style={{'text-align': 'left'}} className={(index % 2 === 0) ? 'par' : '' }>
                 <td>{produto.id}</td>
                 <td>{produto.product}</td>
                 <td>{pricePtBR}</td>

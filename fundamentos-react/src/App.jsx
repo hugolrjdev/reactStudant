@@ -1,28 +1,33 @@
 /* eslint-disable import/no-anonymous-default-export */
 import './App.css';
+import ParouImpar from './componentes/condicional/ParouImpar';
 import TabelaDeProdutos from './componentes/repeticao/TabelaDeProdutos';
 import ListaAlunos from './componentes/repeticao/ListaAlunos';
 import Aleatorio from "./componentes/basicos/Aleatorio";
-import React from "react";
 import Primeiro from './componentes/basicos/Primeiro';
 import ComParamentros from './componentes/basicos/ComParametros';
 import Fragmento from './componentes/basicos/Fragmentos';
 import Card from "./componentes/layout/Card";
 import Familia from './componentes/basicos/Familia';
 import FamiliaMenbro from './componentes/basicos/FamiliaMenbro';
-
+import React from "react";
 
 const user = "Hugo Lélio";
-const deuRock = <div><h1>D3uR0cK {user}</h1></div>;
+
 
 export default props => 
         <div className='app'>
-           <h1>Fundamentos React</h1>
+           <h1>Fundamentos React </h1>
 
 
             <div className="cards">
-            <Card titulo="#06 - Desafio de Repetição" color="#3da4ab">
-                <TabelaDeProdutos/>
+
+            <Card titulo="#08 - Par ou Impar" color="#f6cd61">
+                <ParouImpar numero="18"/>
+            </Card>
+
+            <Card titulo="#07 - Desafio de Repetição" color="#3da4ab">
+                <TabelaDeProdutos />
             </Card>
 
             <Card titulo="#06 - Repetição Lista de Alunos" color="#0e9aa7">
