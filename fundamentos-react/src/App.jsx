@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import './App.css';
+
 import ParouImpar from './componentes/condicional/ParouImpar';
 import TabelaDeProdutos from './componentes/repeticao/TabelaDeProdutos';
 import ListaAlunos from './componentes/repeticao/ListaAlunos';
@@ -11,6 +12,7 @@ import Card from "./componentes/layout/Card";
 import Familia from './componentes/basicos/Familia';
 import FamiliaMenbro from './componentes/basicos/FamiliaMenbro';
 import React from "react";
+import UsuarioInfo from './componentes/condicional/UsuarioInfo';
 
 const user = "Hugo Lélio";
 
@@ -24,6 +26,10 @@ export default props =>
 
             <Card titulo="#08 - Par ou Impar" color="#f6cd61">
                 <ParouImpar numero="18"/>
+                <UsuarioInfo usuario={{nome: 'Hugo Lélio'}} />
+                <UsuarioInfo usuario={{nome: 'Hugo Neto'}} />
+                <UsuarioInfo usuario={{email: 'Hugo Neto'}} />
+                <UsuarioInfo usuario={{}} />
             </Card>
 
             <Card titulo="#07 - Desafio de Repetição" color="#3da4ab">
