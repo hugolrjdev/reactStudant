@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable no-undef */
 import React from "react";
-import If from "./If";
+import If, { Else } from "./If";
 
 export default props=>{
     const usuario = props.usuario || {};
@@ -9,10 +9,13 @@ export default props=>{
         <div>
             <If test={usuario && usuario.nome}>
                 Seja Bem vindo <strong>{props.usuario.nome}</strong>!
+                <Else>
+                    Seja bem vindo <strong>Amigão</strong>!
+                </Else>
             </If>
-            <If test={!usuario || !usuario.nome}>
+            {/* <If test={!usuario || !usuario.nome}>
                 Seja Bem vindo <strong>Amigão</strong>!
-            </If>
+            </If> */}
         </div>
     );
 }

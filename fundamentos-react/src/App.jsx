@@ -27,9 +27,10 @@ export default props =>
             <Card titulo="#08 - Par ou Impar" color="#f6cd61">
                 <ParouImpar numero="18"/>
                 <UsuarioInfo usuario={{nome: 'Hugo Lélio'}} />
-                <UsuarioInfo usuario={{nome: 'Hugo Neto'}} />
+                
+                {/* <UsuarioInfo usuario={{nome: 'Hugo Neto'}} />
                 <UsuarioInfo usuario={{email: 'Hugo Neto'}} />
-                <UsuarioInfo usuario={{}} />
+                <UsuarioInfo usuario={{}} /> */}
             </Card>
 
             <Card titulo="#07 - Desafio de Repetição" color="#3da4ab">
