@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import './App.css';
+import IndiretaPai from './componentes/comunicacao/IndiretaPai';
 import DiretaPai from './componentes/comunicacao/DiretaPai';
 import ParouImpar from './componentes/condicional/ParouImpar';
 import TabelaDeProdutos from './componentes/repeticao/TabelaDeProdutos';
@@ -23,6 +24,9 @@ export default props =>
 
 
             <div className="cards">
+            <Card titulo="#10 Comunicação Direta" color="#4a4e4d">
+                <IndiretaPai></IndiretaPai>
+            </Card>
 
             <Card titulo="#09 Comunicação Direta" color="#fe8a71">
                 <DiretaPai></DiretaPai>
