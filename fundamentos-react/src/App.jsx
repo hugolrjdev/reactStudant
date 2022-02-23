@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import './App.css';
+import Contador from './componentes/contador/Contador';
 import Input from './componentes/formulario/Input'
 import IndiretaPai from './componentes/comunicacao/IndiretaPai';
 import DiretaPai from './componentes/comunicacao/DiretaPai';
@@ -25,6 +26,10 @@ export default props =>
 
 
             <div className="cards">
+
+            <Card titulo="#12 Contador" color="#3da4ab">
+                <Contador numeroInicial={18} />
+            </Card>
 
             <Card titulo="#11 Componente Controlado" color="#0e9aa7">
                 <Input />

@@ -17,7 +17,7 @@ export default props =>{
                 display:'flex',
                 flexDirection: 'column'
             }
-        }>   
+        }>
             <input type="text" value={valor} onChange={quandoDigitar} />
             <input type="text" value={valor} readOnly />
             <input type="text" value={undefined} />
