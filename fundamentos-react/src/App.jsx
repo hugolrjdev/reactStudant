@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import './App.css';
+import Mega from './componentes/mega/Mega';
 import Contador from './componentes/contador/Contador';
 import Input from './componentes/formulario/Input'
 import IndiretaPai from './componentes/comunicacao/IndiretaPai';
@@ -26,6 +27,9 @@ export default props =>
 
 
             <div className="cards">
+            <Card titulo="#18 Mega gerando numeros aleatorios" color="#f6cd61">
+                <Mega />
+            </Card>
 
             <Card titulo="#12 Contador" color="#3da4ab">
                 <Contador numeroInicial={18} />
