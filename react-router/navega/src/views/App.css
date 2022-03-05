@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.app {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    background: #5f4cd9;
+    padding: 30px 10px;
+    height: 100vh;
+}
+
+aside ul {list-style: none;}
+
+aside li {margin: 5px 0;}
+
+aside h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+aside a:hover {
+    color: #f3e300;
+}
+
+main {
+    margin: 35px;
+}
