@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+
+#temp
+/tmpnodejsnpm-cache
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
