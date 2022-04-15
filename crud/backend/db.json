@@ -1,13 +1,3 @@
 {
-    "users": [{
-        "id": 1,
-        "name": "Hugo Lélio",
-        "email": "hugolrj@yahoo.com.br"
-        },
-        {
-            "id": 2,
-            "name": "Valentina Lélio",
-            "email": "VL@yahoo.com.br"
-            }
-    ]
+  "users": []
 }
