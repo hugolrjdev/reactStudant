@@ -54,9 +54,9 @@ export default class UserCrud extends Component {
 
     }
 
-    getUpdatedList(user){
+    getUpdatedList(user, add = true){
         const list = this.state.list.filter(u => u.id !== user.id); // se o id for diferente do user.id ele adiciona no inicio da lista e depois retorna list
-        if(user){
+        if(add){
             list.unshift(user);
         }
         return list
@@ -126,7 +126,7 @@ export default class UserCrud extends Component {
 
     remove(user){
         axios.delete(`${baseUrl}/${user.id}`).then(response=>{
-            const list = this.getUpdatedList(); // verifica qual usuario é igual ao usuario recebido depois atualiza a lista removendo o mesmo
+            const list = this.getUpdatedList(user, false); // verifica qual usuario é igual ao usuario recebido depois atualiza a lista removendo o mesmo
             this.setState( {list} );
         })
     }
@@ -139,6 +139,7 @@ export default class UserCrud extends Component {
             <table className="table mt-4">
                 <thead>
                     <tr>
+                        <th>id</th>
                         <th>Nome</th>
                         <th>E-mail</th>
                         <th>Ações</th>
@@ -158,13 +159,13 @@ export default class UserCrud extends Component {
            return(
                <tr key={user.id}>
                    <td>{user.id}</td>
-                   <td>{user.nome}</td>
+                   <td>{user.name}</td>
                    <td>{user.email}</td>
                    <td>
                        <button className="btn btn-warning" onClick={() => {this.load(user)}}>
                            <i className="fa fa-pencil"></i>
                        </button>
-                       <button className="btn btn-danger ml-2" onClick={this.remove(user)}>
+                       <button className="btn btn-danger ml-2">
                            <i className="fa fa-trash"></i>
                        </button>
                    </td>
@@ -172,9 +173,7 @@ export default class UserCrud extends Component {
            )
         })
     }
-
-
-
+    
     render(){
         return(
             <Main {...headerProps}>

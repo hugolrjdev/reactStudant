@@ -1,3 +1,19 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Hugo Lélio Rodrigues Neto ",
+      "email": "hugolrn@fortalezaplanodesaude.com"
+    },
+    {
+      "name": "Hugo Lélio Rodrigues Junior",
+      "email": "falecom@fortalezaplanodesaude.com",
+      "id": 2
+    },
+    {
+      "name": "Thuany Rodrigues de Lima",
+      "email": "gerente@fortalezaplanodesaude.com",
+      "id": 3
+    }
+  ]
 }
