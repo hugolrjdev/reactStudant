@@ -28,7 +28,7 @@ export default class UserCrud extends Component {
     }
 
     clear(){
-        this.setState({user: initialState.user});
+        this.setState({user: initialState.user}); // passar objeto vazio
     }
 
     save(){
